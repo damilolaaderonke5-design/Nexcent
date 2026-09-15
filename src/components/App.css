@@ -127,202 +127,28 @@ body {
 
 
 
-/* =========================
-   NAVIGATION
-========================= */
-
-.nav {
-    width: 100%;
-    min-height: 80px;
-    background-color: #f5f5f5;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 15px 5%;
-    gap: 20px;
-}
-
-/* Logo */
-
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-/* Navigation links */
-
-.nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-}
-
-/* Navigation button */
-
-.nav button {
-    border: none;
-    background-color: green;
-    color: white;
-
-    padding: 10px 15px;
-    border-radius: 5px;
-
-    font-size: 16px;
-    cursor: pointer;
-
-    white-space: nowrap;
-}
-
-/* Hamburger */
-
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-/* =========================
-   HERO SECTION
-========================= */
-
-.hero-container {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-
-    background-color: aliceblue;
-
-    width: 100%;
-    min-height: 500px;
-
-    justify-content: center;
-    align-items: center;
-
-    padding: 80px 5%;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-text h1 {
-    color: black;
-    font-weight: 400;
-    font-size: 50px;
-}
-
-.hero-text h1 span {
-    color: green;
-    font-size: 50px;
-}
-
-.hero p {
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.hero-text button {
-    border: none;
-    background-color: green;
-    color: white;
-
-    padding: 10px 15px;
-    margin: 30px 0;
-
-    border-radius: 5px;
-
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
-/* =========================
-   TESTIMONIAL
-========================= */
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    line-height: 1.5;
-    text-align: center;
-
-    padding: 60px 20px;
-}
-
-.testimonial h2 {
-    font-size: 40px;
-    font-weight: normal;
-}
-
-
-/* =========================
-   MANAGE SECTION
-========================= */
-
-.manage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    line-height: 1;
-
-    padding: 60px 20px;
-}
-
-.manage h2 {
-    font-size: 40px;
-    font-weight: normal;
-}
-
-.manage p {
-    line-height: 1.8;
-    font-weight: normal;
-}
-
-
-/* =========================
-   LIST
-========================= */
-
-.list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    gap: 30px;
-
-    padding: 30px 20px;
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
 @media (max-width: 900px) {
 
     .nav {
-        padding: 15px 4%;
+        padding: 15px 3%;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 22px;
     }
 
     .nav ul {
         gap: 20px;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .nav button {
+        font-size: 14px;
+        padding: 9px 12px;
     }
 
     .hero-container {
@@ -342,69 +168,42 @@ body {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 768px) {
-
-    /* Navigation */
 
     .nav {
         min-height: 70px;
-
-        /*
-        Logo | Hamburger | Button
-        */
-
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-
         padding: 12px 20px;
+        gap: 10px;
     }
-
-    /* Logo stays on the left */
 
     .logo {
-        justify-self: start;
-        font-size: 22px;
+        font-size: 20px;
     }
-
-    /* Hide normal navigation */
 
     .nav ul {
-        display: none;
+        display: flex;
+        gap: 12px;
+        align-items: center;
     }
 
-    /* Hamburger appears in the CENTER */
-
-    .hamburger {
-        display: block;
-        justify-self: center;
+    .nav ul li a {
+        font-size: 12px;
     }
-
-    /* Button stays on the RIGHT */
 
     .nav button {
-        justify-self: end;
-        font-size: 14px;
-        padding: 9px 12px;
+        font-size: 12px;
+        padding: 8px 10px;
     }
-
-
-    /* Hero */
 
     .hero-container {
         flex-direction: column;
-
         text-align: center;
-
         gap: 30px;
-
         min-height: auto;
-
         padding: 60px 20px;
     }
 
@@ -422,9 +221,6 @@ body {
         line-height: 1.7;
     }
 
-
-    /* Testimonial */
-
     .testimonial {
         padding: 50px 20px;
     }
@@ -432,9 +228,6 @@ body {
     .testimonial h2 {
         font-size: 30px;
     }
-
-
-    /* Manage */
 
     .manage {
         padding: 50px 20px;
@@ -448,9 +241,6 @@ body {
         line-height: 1.7;
     }
 
-
-    /* List */
-
     .list {
         flex-direction: column;
         gap: 25px;
@@ -458,27 +248,28 @@ body {
 }
 
 
-/* =========================
-   SMALL MOBILE PHONES
-========================= */
-
 @media (max-width: 480px) {
 
     .nav {
-        padding: 10px 15px;
+        padding: 10px 12px;
+        gap: 5px;
     }
 
     .logo {
-        font-size: 19px;
+        font-size: 16px;
     }
 
-    .hamburger {
-        font-size: 26px;
+    .nav ul {
+        gap: 8px;
+    }
+
+    .nav ul li a {
+        font-size: 10px;
     }
 
     .nav button {
-        font-size: 12px;
-        padding: 8px 10px;
+        font-size: 10px;
+        padding: 7px 8px;
     }
 
     .hero-container {
@@ -503,5 +294,3 @@ body {
         font-size: 26px;
     }
 }
-
-
