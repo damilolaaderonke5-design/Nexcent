@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './App.css'
-import Nav from './nav';
-import Hero from './hero';
+import Nav from './Nav';
+import Hero from './Hero';
 import Features from './Features';
 import Testimonial from './Testimonial';
 import Manage from './Manage';
