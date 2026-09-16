@@ -1,5 +1,5 @@
 import React from 'react';
-function Nav(){
+function Navbar(){
     return(
         <div className="nav">
             <img src="./logo.svg" alt=""></img>
@@ -25,4 +25,4 @@ function Nav(){
     );
 }
 
-export default Nav;
+export default Navbar;

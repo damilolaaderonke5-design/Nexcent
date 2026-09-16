@@ -265,6 +265,7 @@ body {
     }
 
     .nav ul li a {
+        display: none;
         font-size: 10px;
     }
 
