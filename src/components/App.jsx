@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css'
 
-import Nav from './Navbar';
+import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from './Features';
 import Testimonial from './Testimonial';
